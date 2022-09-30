@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialCash</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link href="/assets/fontawesome-free-6.2.0-web/css/fontawesome.css" rel="stylesheet">
+    <link href="/assets/fontawesome-free-6.2.0-web/css/brands.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="navbar">
+            <img src="/assets/logo.png" alt="logo" class="logo">
+            <nav>
+                <ul id="menu-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="/assets/menu.png" alt="menu" class="menu-icon" onclick="toggleMenu()">
+        </div>
+
+        <div class="content">
+            <h2 style="margin-top: 40px ;">A REVOLUTION IN SOCIAL MEDIA</h2>
+            <h2>MARKETING IS COMING</h2>
+            <h2 style="margin-top: 30px;">BE A PART OF IT</h2>
+            <p style="margin-top: 30px;">Join our Telegram channel to get Early bird advantages</p>
+            <button class="btn" href="#">
+                <i class="fa-brands fa-telegram fa-2x fa-align-left" style="color:rgb(0, 200, 250);"></i> Join Us
+            </button>
+            <img class="img-people" src="/assets/people.png" alt="img">
+        </div>
+    </div>
+
+<script>
+    var menuList = document.getElementById("menu-list");
+    menuList.style.maxHeight = "0px";
+
+    function toggleMenu(){
+        menuList.style.maxHeight == "0px" ? menuList.style.maxHeight = "130px" : menuList.style.maxHeight = "0px";
+    }
+
+</script>
+</body>
+</html>
